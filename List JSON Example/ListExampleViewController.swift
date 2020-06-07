@@ -26,11 +26,17 @@ class ListExampleViewController: UIViewController {
 
 extension ListExampleViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    0
+    return viewModel.postCount
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    UITableViewCell(style: .default, reuseIdentifier: " ListExampleCell")
+    let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "ListExampleCell")
+    let row = indexPath.row
+    cell.textLabel?.numberOfLines = 0
+    cell.textLabel?.text = viewModel.title(for: row)
+    cell.detailTextLabel?.numberOfLines = 0
+    cell.detailTextLabel?.text = viewModel.body(for: row)
+    return cell
   }
 }
 

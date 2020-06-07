@@ -24,7 +24,7 @@ class ListExampleViewModel {
     guard validPosts.count > index else {
       return "N/A"
     }
-    return validPosts[index].title
+    return "\(validPosts[index].id): \(validPosts[index].title)"
   }
   
   func body(for index: Int) -> String {
