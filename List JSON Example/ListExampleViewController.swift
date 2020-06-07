@@ -27,10 +27,12 @@ extension ListExampleViewController: UITableViewDataSource {
 }
 
 extension ListExampleViewController: ListExampleViewDelegate {
+  func refreshButtonPressed() {
   }
 }
 
 extension ListExampleViewController: ListExampleViewModelDelegate {
+  func postsUpdated() {
     
   }
 }
