@@ -9,10 +9,16 @@
 import UIKit
 
 class ListExampleViewController: UIViewController {
-
+  var viewModel = ListExampleViewModel()
+  
+  var listExampleView: ListExampleView {
+    return view as! ListExampleView
+  }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
+    viewModel.delegate = self
+    listExampleView.delegate = self
   }
 }
 
@@ -33,6 +39,6 @@ extension ListExampleViewController: ListExampleViewDelegate {
 
 extension ListExampleViewController: ListExampleViewModelDelegate {
   func postsUpdated() {
-    
+    listExampleView.dataUpdated()
   }
 }

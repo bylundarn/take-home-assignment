@@ -18,6 +18,10 @@ class ListExampleView: UIView {
   weak var delegate: ListExampleViewDelegate?
   
   @IBAction func refreshButtonAction(_ sender: Any) {
+    delegate?.refreshButtonPressed()
   }
   
+  func dataUpdated() {
+    tableView.reloadData()
+  }
 }
