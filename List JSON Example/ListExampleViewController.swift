@@ -19,6 +19,8 @@ class ListExampleViewController: UIViewController {
     super.viewDidLoad()
     viewModel.delegate = self
     listExampleView.delegate = self
+    viewModel.configure(view: listExampleView)
+    viewModel.refreshPosts()
   }
 }
 
