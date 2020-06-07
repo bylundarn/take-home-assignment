@@ -14,7 +14,14 @@ class ListExampleViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
   }
-
-
 }
 
+extension ListExampleViewController: UITableViewDataSource {
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    0
+  }
+  
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    UITableViewCell(style: .default, reuseIdentifier: " ListExampleCell")
+  }
+}

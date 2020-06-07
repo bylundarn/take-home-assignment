@@ -12,4 +12,10 @@ import Foundation
 import UIKit
 
 class ListExampleView: UIView {
+  @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var refreshButton: UIButton!
+  
+  @IBAction func refreshButtonAction(_ sender: Any) {
+  }
+  
 }
