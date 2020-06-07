@@ -15,6 +15,8 @@ class ListExampleView: UIView {
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var refreshButton: UIButton!
   
+  weak var delegate: ListExampleViewDelegate?
+  
   @IBAction func refreshButtonAction(_ sender: Any) {
   }
   

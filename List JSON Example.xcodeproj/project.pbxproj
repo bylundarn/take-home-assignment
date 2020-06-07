@@ -17,6 +17,8 @@
 		DD915811248D3ADD00360979 /* ListExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD915810248D3ADD00360979 /* ListExampleView.swift */; };
 		DD915813248D3AFF00360979 /* ListExampleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD915812248D3AFF00360979 /* ListExampleViewModel.swift */; };
 		DD915816248D3B1F00360979 /* ListExampleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD915815248D3B1F00360979 /* ListExampleModel.swift */; };
+		DD915818248D3E7800360979 /* ListExampleViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD915817248D3E7800360979 /* ListExampleViewDelegate.swift */; };
+		DD91581A248D3ED300360979 /* ListExampleViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD915819248D3ED300360979 /* ListExampleViewModelDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		DD915810248D3ADD00360979 /* ListExampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleView.swift; sourceTree = "<group>"; };
 		DD915812248D3AFF00360979 /* ListExampleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleViewModel.swift; sourceTree = "<group>"; };
 		DD915815248D3B1F00360979 /* ListExampleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleModel.swift; sourceTree = "<group>"; };
+		DD915817248D3E7800360979 /* ListExampleViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleViewDelegate.swift; sourceTree = "<group>"; };
+		DD915819248D3ED300360979 /* ListExampleViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListExampleViewModelDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +95,9 @@
 				DD9157F9248D397000360979 /* LaunchScreen.storyboard */,
 				DD915810248D3ADD00360979 /* ListExampleView.swift */,
 				DD9157F2248D396E00360979 /* ListExampleViewController.swift */,
+				DD915817248D3E7800360979 /* ListExampleViewDelegate.swift */,
 				DD915812248D3AFF00360979 /* ListExampleViewModel.swift */,
+				DD915819248D3ED300360979 /* ListExampleViewModelDelegate.swift */,
 				DD9157F4248D396E00360979 /* Main.storyboard */,
 				DD915814248D3B1200360979 /* Models */,
 				DD9157F0248D396E00360979 /* SceneDelegate.swift */,
@@ -221,8 +227,10 @@
 				DD9157F3248D396E00360979 /* ListExampleViewController.swift in Sources */,
 				DD9157EF248D396E00360979 /* AppDelegate.swift in Sources */,
 				DD9157F1248D396E00360979 /* SceneDelegate.swift in Sources */,
+				DD91581A248D3ED300360979 /* ListExampleViewModelDelegate.swift in Sources */,
 				DD915811248D3ADD00360979 /* ListExampleView.swift in Sources */,
 				DD915813248D3AFF00360979 /* ListExampleViewModel.swift in Sources */,
+				DD915818248D3E7800360979 /* ListExampleViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

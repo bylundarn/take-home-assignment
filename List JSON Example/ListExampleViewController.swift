@@ -25,3 +25,12 @@ extension ListExampleViewController: UITableViewDataSource {
     UITableViewCell(style: .default, reuseIdentifier: " ListExampleCell")
   }
 }
+
+extension ListExampleViewController: ListExampleViewDelegate {
+  }
+}
+
+extension ListExampleViewController: ListExampleViewModelDelegate {
+    
+  }
+}
