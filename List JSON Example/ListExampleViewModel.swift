@@ -9,5 +9,8 @@
 import Foundation
 
 class ListExampleViewModel {
+  let listExampleModel = ListExampleModel()
   weak var delegate: ListExampleViewModelDelegate?
+  
+  
 }
